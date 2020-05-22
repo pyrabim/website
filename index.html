@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<title>PyrabBIM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body,
+  html {
+    height: 100%;
+    line-height: 1.8;
+    scroll-behavior: smooth;
+  }
+
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/scenic-view-of-buildings-during-evening-1707213.jpg");
+
+    min-height: 100%;
+
+  }
+
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+</style>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide" style="font-size: medium;">
+        PyraBIM
+      </a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">À propos</a>
+        <a href="#services" class="w3-bar-item w3-button">Services</a>
+        <a href="#work" class="w3-bar-item w3-button">Expertise </a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="" class="w3-bar-item w3-button" style="visibility: hidden;"><i class="fa fa-envelope"></i>
+          CONTACT</a>
+
+        <a href="" class="w3-bar-item w3-button"><i class="fa fa-globe"></i>
+          EN</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-green w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">À propos</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">Services</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Expertise</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button" style="visibility: hidden;">Contact</a>
+    <a href="" onclick="w3_close()" class="w3-bar-item w3-button">EN</a>
+
+  </nav>
+
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Build smart</span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Build smart</span><br>
+      <span class="w3-large">Unlock opportunities using techology.</span>
+      <p><a href="#about"
+          class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more
+          and start today</a></p>
+    </div>
+
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-container" style="padding:128px 16px;" id="about">
+    <h3 class="w3-center w3-center ">À PROPOS</h3>
+    <div class="w3-modal-content w3-large">
+      <p>PyraBIM accompagne les acteurs du BTP dans le déploiement de technologies
+        innovantes pour leurs activités. Que vous soyez Maitre d'ouvrage, Maitre
+        d'oeuvre, entreprise, nous vous apportons des solutions s'adaptant à votre
+        organisation et économiquement réalistes.
+      </p>
+
+      <p>Grâce à notre approche systémique et
+        notre maitrise de la donnée par le BIM et l'IOT, nous développont des logiciels,
+        des processus, et gérons la composante technologique de vos projets de construction.
+      </p>
+
+      <p>
+        Avec PyraBIM, vous pouvez atteindre des objectifs ambitieux en termes économiques, énergétiques,
+        et environnementaux, en automatisant vos tâches redondantes pour vous concenter
+        sur votre coeur de métier: construire.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Service Section -->
+  <div class="w3-container" style="padding:128px 16px" id="services">
+    <h3 class="w3-center">SERVICES</h3>
+    <div class="w3-row-padding " style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="images/blue-dev.png" class="w3-image" style="display: block;margin: auto;" alt="Software development" ">
+          <div class=" w3-container" style="min-height: 40em;">
+          <h3 style="text-align: center;">Développement de logiciels </h3>
+
+          <p>PyraBIM développe des logiciels personnalisés pour visualiser
+            vos maquettes au format IFC, corriger vos maquettes avec des algorithmes
+            d'intelligence artificielle, extraire des informations, et vérifier la conformité
+            de votre projet avec la règlementation.
+          </p>
+
+          <p>
+            Nous vous permettons également d'automatiser
+            les processus au sein de vos logiciels de modélisation comme Revit ou ArchiCAD,
+            par le développement de plugins.
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/green-proj.png" class="w3-image" style="display: block;margin: auto;" alt="Coordination BIM" ">
+        <div class=" w3-container" style="min-height: 40em;">
+        <h3 style="text-align: center;">Coordination BIM</h3>
+        <p> PyraBIM assure un service d'AMO BIM et/ou de BIM management lors de vos projets de
+          construction.
+
+        </p>
+
+
+        <p>
+          Grâce à notre expérience de terrain et nos partenaires, nous rédigeons le cahier des charges
+          BIM de votre projet en lien avec votre charte BIM, ainsi qu'une convention BIM centralisant
+          les règles
+          de modélisation et d'échange.</p>
+
+        <p>
+          Nous vous accompagnons également dans la mise en place d'une plateforme
+          de travail collaborative, raison d'être du BIM, et animons des réunions BIM.
+        </p>
+        <br>
+
+      </div>
+    </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-card">
+      <img src="images/red-strat.png" class="w3-image" style="display: block;margin: auto;" alt="Stratégie BIM" ">
+        <div class=" w3-container" style="min-height: 40em;">
+      <h3 style="text-align: center;">Stratégie BIM</h3>
+
+      <p>
+        PyraBIM vous accompagne dans le déploiement d'une stratégie BIM au sein de votre
+        organisation.
+      </p>
+
+      <p>Nous prenons en comptes vos objectifs ainsi que vos contraintes organisationnelles,
+        techniques, et financières afin de vous apporter des réponses concrètes et non gadget.</p>
+
+      <p>
+        Nous proposons également un accompagnement pédagogique de vos équipes pour
+        la compréhension des nouvelles technologies associées à la construction et de leurs enjeux.
+      </p>
+
+    </div>
+  </div>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-card">
+      <img src="images/yellow-innov.png" class="w3-image" style="display: block;margin: auto;" alt="Innovation" ">
+      <div class=" w3-container" style="min-height: 40em;">
+      <h3 style="text-align: center;">Innovation</h3>
+
+      <p>
+        PyraBIM rend l'innovation possible pour votre entreprise.
+
+      </p>
+
+      <p>Nous proposons des partenariats pour développer des solutions prêtes à l'emploi.
+      </p>
+
+      <p>
+        Nous utilisons des technologies prometteuses (IA, IOT, Blockchain...) sur des projets expérimentaux.
+
+      </p>
+      <p>Quelle que soit votre position dans la chaîne de valeur de la construction, vous pouvez tirer profit de la
+        technologie.</p>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <!-- Work Section -->
+  <div class="w3-container" style="padding:128px 16px" id="work">
+    <h3 class="w3-center">EXPERTISE</h3>
+    <p class="w3-center w3-large"> Nous utilisons des algorithmes pour contrôler et corriger les maquettes...
+    </p>
+
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-col l3 m6">
+        <img src="/images/beams.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Identifier les panes inclinées">
+      </div>
+
+      <div class="w3-col l3 m6">
+        <img src="/images/facade.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Identifier les murs de façade">
+      </div>
+      <div class="w3-col l3 m6">
+        <img src="/images/pipes.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="VIsualiser les maquettes MEP">
+      </div>
+      <div class="w3-col l3 m6">
+        <img src="/images/structure.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Visualiser les éléments structuraux">
+      </div>
+    </div>
+    <br>
+    <p class="w3-center w3-large">...puis intégrons ces algorithmes dans des applications au service
+      des projets et des organisations.</p>
+    <br>
+
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col l3 m6">
+        <img src="/images/viewer.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Visualiser les maquettes et leurs données">
+      </div>
+      <div class="w3-col l3 m6">
+        <img src="/images/stairs.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Inspecter les éléments des constructions">
+      </div>
+      <div class="w3-col l3 m6">
+        <img src="/images/room.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Entrer dans les pièces en vue immersive">
+      </div>
+
+      <div class="w3-col l3 m6">
+        <img src="/images/city.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Visualiser les maquettes de ville">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px; min-height: 100vh;" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">Envie de collaborer? Contactez-nous:</p>
+    <div style="margin-top:48px;">
+
+      <p class="w3-center w3-large"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-center"></i> Reims, FR</p>
+      <p class="w3-center w3-large"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +33 6 36 29 20 25</p>
+      <p class="w3-center w3-large"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> contact@pyrabim.com
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
